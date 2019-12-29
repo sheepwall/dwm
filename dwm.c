@@ -1731,7 +1731,7 @@ tile(Monitor *m)
 
 	if (n == 1) {
 		c = nexttiled(m->clients);
-		resize(c, m->wx, m->wy, m->ww - 2 * c->bw, m->wh - 2 * c->bw, 0);
+		resize(c, m->wx + otmarginpx, m->wy + otmarginpx, m->ww - 2 * c->bw - 2 * otmarginpx, m->wh - 2 * c->bw - 2 * otmarginpx, 0);
 		return;
 	}
 
