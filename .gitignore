@@ -1,0 +1,7 @@
+*.o
+
+# executable
+dwm
+
+# config is os-specific
+config.h
